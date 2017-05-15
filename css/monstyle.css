@@ -1,0 +1,193 @@
+/* gestion des titres */
+
+h1 {
+	text-align: center;
+	color: blue;
+	
+	/* margin: ... pour mettre des marges */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    /*font-weight: 700;*/
+}
+
+body {
+	background-color : #DDDDDD;
+}
+/*
+section h1.section-heading {
+    font-size: 4000px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}*/
+
+
+/* Classe principale de la barre de navigation */
+
+
+.navbar-default {
+	/* couleur de fond de la barre de navigation */
+	background-color : #EEEEEE;
+}
+
+/* Couleur des titres affichés dans la barre pour le brand uniquement */
+
+/* signifie : concerne tous les navbar-brand qui sont dans une navbar-default */
+.navbar-default .navbar-brand {
+color: #777777;
+}
+/* Couleur utilisée lors du passage de la souris sur un titre de la barre */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+color: #5E5E5E;
+}
+/* Couleur utilisée pour les liens */
+.navbar-default .navbar-nav > li > a {
+color: #777 ;
+}
+/* Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+color: #333;
+}
+/* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+color: #555;
+background-color: #E7E7E7;
+}
+/* Couleur utilisée pour un menu dépliant lorsqu'il est ouvert */
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+color: #555;
+
+}
+
+
+
+.intro-header {
+    margin-bottom: 0px;
+ }
+
+/* signification : applicable à tout ce qui est dans un intro-header */
+.intro-header h1 {
+
+	font-size: 10;
+	color: black;
+}
+
+.site-heading h1{
+	
+	color:black;
+	font-size:1000
+}
+
+
+ul.dropdown-menu {
+    
+    background-color: #000;
+
+}
+
+/* pour les menus drop down */
+ .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #FFFFFF;
+    color:#000000;
+   
+  }
+#bodyContent {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 0;
+    background: #E6E6E6;
+}
+
+.vertical-centered {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+p {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+    font-size: 1em;
+    font-family: georgia, times, "Times New Roman", serif;
+
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+
+}
+
+
+
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    margin-bottom: 40px;
+}
+
+ 
+ .souspartie{
+
+    color: #663399;
+ }
+ .soussouspartie{
+   color: #FF0000;
+   text-transform: none;
+ }
+ .liste{
+    padding-left: 50px;
+ }
+
+ a:hover{
+    text-decoration: none;
+ }
+
+ .row{
+
+    margin-top: 20px;
+ }
+ 
+ body #footer small {
+   
+    display: block;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+body #prefootergrad {
+    background: linear-gradient(to bottom, white, blue);
+}
+body #footer {
+ 
+    width:100%;
+    bottom: 0;
+
+    background:  linear-gradient(to bottom, #DDDDDD, white) ;
+    padding-top: 40px;
+	font-size:  15px;
+}
+
+body .wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#footerp {
+    text-align: center;
+}

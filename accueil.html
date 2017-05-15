@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>un premier test avec bootstrap</title>
 	
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	
 	
 	
 	
@@ -19,7 +22,8 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/monstyle.css">
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -57,20 +61,20 @@
 	  
 	  
 	  <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes <span class="caret"></span></a>
+          <a href="graphe.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Arbre des débats</a></li>
+            <li><a href="graphe.html#arbre">Arbre des débats</a></li>
 			<li role="separator" class="divider"></li> <!-- pour faire la petite ligne de séparation -->
-            <li><a href="#">Carte des acteurs</a></li>
+            <li><a href="graphe.html#carte">Carte des acteurs</a></li>
 			<li role="separator" class="divider"></li>
-            <li><a href="#">Frise chronologique</a></li>
+            <li><a href="graphe.html#frise">Frise chronologique</a></li>
           </ul>
        </li>
 	   
 	   <!-- pour mettre un bouton en actif -->
        <!-- <li class="active"><a href="#">Approfondi <span class="sr-only">(current)</span></a></li> -->
 	   
-	   <li><a href="apropos.html">Approfondi</a></li>
+	   <li><a href="approfondi.html">Approfondi</a></li>
        <li><a href="apropos.html">A propos</a></li>
         
       </ul>
@@ -80,33 +84,66 @@
 	</div><!-- /.container-fluid -->
 	</nav>
 	
-	<!--
-	<header class="intro-header" style="background-image: url('imgcritair.png')" >
+	
+	<header class="intro-header" style="background-image: url('img/imgcritair3.png')" >
         <div class="container">
             <div class="row">
-                <div class="center-block">
+                <!-- <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
+				<div class="center-block">
                     <div class="site-heading">
-                        <h1>ETIC</h1>
+                        <h1>Les critères de Crit'air</h1>
                         <hr class="small">
-                        <span class="subheading">Les critères de Crit'air</span>
+                        <span class="subheading">Projet étic Télécom Paristech</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header> -->
+    </header>
+	
+	
+	
 
 <section>
-	<div class="container-fluid">
+	<div class="container">
 
 		<div class="center-block">
-			<h1 class="text-center"> Les critères de Crit'air </h1>
-			<img src="imgcritair.png" class="img-responsive"  alt="tiens ça marche pas" />
+		<br><br>
+			<h2> Les critères de Crit'air </h2>
 		</div>
-		<br><br><p> Bonjour, je suis en train d'écrire le blablabla </p>
+		<br><br><p> Bonjour, je suis en train d'écrire le blablabla 
+			<br>Et voici un lien <a href='#'>Home</a></p>
+		
+		<div class="souspartie">
+			<p>Ceci est une sous partie</p>
+			<div class="soussouspartie">
+				<p>Qui comprend plusieurs sous sous parties</p>
+			</div>
+			
+			<div class="soussouspartie">
+				<p>voilà la deuxième sous sous partie</p>
+			</div>
+			
+		</div>
 	</div>
 	
 	
 </section>
+
+
+
+
+
+
+<section id="footer">
+	<div class="wrap follow">
+        <p id="footerp">
+			Site du groupe 16 du projet étic 2017 de Télécom ParisTech
+        </p>
+      </div>
+    <small>Copyright 2017</small>
+ 
+</section>
+
 	
 
 
