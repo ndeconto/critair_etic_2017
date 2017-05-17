@@ -24,6 +24,10 @@ section h1.section-heading {
 }*/
 
 
+
+
+
+
 /* Classe principale de la barre de navigation */
 
 
@@ -66,11 +70,11 @@ background-color: #E7E7E7;
 color: #555;
 
 }
-
-
-
 .intro-header {
     margin-bottom: 0px;
+	margin : 0px 0;
+	/* augmenter le padding permet de ézoomer" l'image */
+	padding: 4px 0;
  }
 
 /* signification : applicable à tout ce qui est dans un intro-header */
@@ -99,6 +103,9 @@ ul.dropdown-menu {
     color:#000000;
    
   }
+  
+  
+ /* # : pour sélectionner un identifiant */
 #bodyContent {
     margin: 0 auto;
     max-width: 800px;
