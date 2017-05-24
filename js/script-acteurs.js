@@ -1,21 +1,23 @@
 ﻿var matrix = [
-  [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1],
-  [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
-  [0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],
-  [4, 0, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0],
-  [0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0],
-  [1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1],
-  [2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0],
-  [2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0],
-];
+		[0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+       [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1],
+       [0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0],
+       [0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
+       [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0],
+       [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3],
+       [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1],
+       [0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1],
+       [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
+       [0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0]
+	];
 
-var labels = ["Préfecture de police", "Marie de Paris", "Ministère de l'environnement", "Conseil d'état", "Assemblée nationale", "Imprimerie nationale", "Total", "Constructeurs automobiles", "habitants", "Associations d'automobilistes", "OMS", "Air Parif"];
-var cats = ["etat", "etat", "etat", "etat", "etat", "etat", "entreprises", "entreprises", "societe civile", "societe civile", "expert", "expert"];
-var colorCats = {"etat" : "#58c649", "entreprises" : "#dfde26", "societe civile" : "#df7c26", "expert" : "#df262a"};
+var labels = ["Préfecture de police", "Marie de Paris", "Ministère de l'environnement", "Conseil d'état", "Assemblée nationale", "Imprimerie nationale", "U. E.", "Constructeurs auto", "habitants", "Automobilistes", "Associations", "OMS", "Air Parif", "Média"];
+var cats = ["etat", "etat", "etat", "etat", "etat", "etat", "etat", "entreprises", "societe civile", "societe civile", "societe civile", "expert", "expert", "media"];
+var colorCats = {"etat" : "#58c649", "entreprises" : "#dfde26", "societe civile" : "#df7c26", "expert" : "#df262a", "media" : "#0974bf"};
 //colorCats = {"constructeur" : "#48926d", "equipementier" : "#429941", "etat" : "#28827d", "usager" : "#0269d6", "ong" : "#39914f", "media" : "#0974bf", "chercheur" : "#54b02a"};
 var colors = [];
 for(var i = 0; i < labels.length; i++)
@@ -28,18 +30,20 @@ $(".legend").find("li").each(function() {
 
 var content = [[0], [1], [3], [4], [5], [6], [17], [7], [8], [9], [10], [13], [11], [12], [14], [16]];
 
-var contentText = [["Préfecture de police", "Blabla"],
-                ["Marie de Paris", "blabla"],
-				["Ministère de l'environnement", "blabla"],
-				["Conseil d'Etat", "blabla"],
+var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas de non respect du certificat et des lois"],
+                ["Marie de Paris", "Ils ont mis en place le certificat. Ils ont à coeur de mener une politique écolo, et avoir une ville sans diesel d'ici 2020, et sans voiture d'ici 2022."],
+				["Ministère de l'environnement", "Il a soutenu la mise en place du certificat"],
+				["Conseil d'Etat", "Protège les droits des citoyens en s'assurant du respect de la constituton"],
 				["Assemblée nationale", "lrgh"],
-				["Imprimerie Nationale", "greklj"],
-				["Total", "lkgerj"],
-				["Constructeus automobiles", "flfkrj"],
-				["Habitants", "krjl"],
-				["Associations d'automobilistes", "grkjgekl"],
-				["OMS", "ggklj"],
-				["Air Parif", "fklrj"]
+				["Imprimerie Nationale", "Imprime les certificats Crit'Air. Le coût de fabrication est exactement couvert par les 4,18€ que paie chaque automobiliste par vignette."],
+				["Union Européenne", "Etablit des normes restrictives de rejet de pollutants pour les véhicules (normes Euro) que les pays doivent respecter"],
+				["Constructeus automobiles", "Respecte les normes Euro en rendant leurs véhicules moins pollutants (pots catalytiques et filtres antiparticules)"],
+				["Habitants", "Présents dans la ville, ils subissent directement les conséquences de la pollution."],
+				["Automobilistes", "Ils sont les premiers concernés et doivent se soumettre à ce nouveau système pour circuler dans certaines zones."],
+				["Associations d'automobilistes", "Souvent opposées à ce système, elles font entendre leur voix pour dénoncer le manque de fondement et les conséquences négatives injuste."],
+				["OMS", "Fixe les normes pour la pollution: seuils pour chaque polluant"],
+				["Air Parif", "Mesure quotidiennement la pollution en région parisienne"],
+				["Media", "Les médias grand public relaient des informations sur le système, souvent en reprenant le discours de l'Etat, donc légitiment sa mise en place. Les médias spécialisés ont plus tendance à dénoncer subjectif et absurde selon eux."]
 				]
 var chord = d3.layout.chord()
     .padding(.05)
