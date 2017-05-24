@@ -1,20 +1,26 @@
-URL;DATE;Type d'URL;Thème;Position vis-à-vis du thème;Poids;Lu en détail
-http://www.lci.fr/societe/jt-13h-a-lyon-la-confusion-regne-autour-de-la-circulation-alternee-et-la-vignette-crit-air-2023090.html;23/01/2017;Site de journal;Constat ;Sans position;Lourd;Oui
-http://www.agoravox.fr/tribune-libre/article/l-arnaque-de-la-vignette-anti-189094 ;30/01/2017;Forum;Critique acerbe;opposé;faible;Oui
-http://www.20minutes.fr/societe/1990603-20170105-pollution-vignette-critair-cote-aupres-francais;05/01/2017;Site de journal;Constat ;positif;Lourd;Oui
+URL;DATE;Type d'URL;Thème;Position vis-à-vis du thème;Poids;Lu en détail;description
+http://www.lci.fr/societe/jt-13h-a-lyon-la-confusion-regne-autour-de-la-circulation-alternee-et-la-vignette-crit-air-2023090.html;23/01/2017;Site de journal;Constat ;Sans position;Lourd;Oui;comment la vignette Crit'air a été reçu par les Lyonnais
+http://www.agoravox.fr/tribune-libre/article/l-arnaque-de-la-vignette-anti-189094 ;30/01/2017;Forum;Critique acerbe;opposé;faible;Oui;Lettre ouverte d'un citoyen aux parlementaires
+http://www.20minutes.fr/societe/1990603-20170105-pollution-vignette-critair-cote-aupres-francais;05/01/2017;Site de journal;Constat ;positif;Lourd;Oui;Avis de la plupart des citoyens à propos de Crit'air
 "
 http://www.fondation-nicolas-hulot.org/magazine/vignette-critair-en-route-pour-moins-de-pollution
-";18/01/2017;Site associatif;Explication;positif;Moyen;Oui
-https://www.challenges.fr/automobile/actu-auto/crit-air-le-retour-de-l-ecopastille_14555;17/06/2016;Site de journal;Présentation;positif;Lourd;Non
-http://www.caradisiac.com/vignette-crit-air-oui-mais-sur-quels-criteres-112319.htm;27/01/2017;Forum;Critique ;opposé;Moyen;Non
-https://www.grazia.fr/news-et-societe/societe/5-choses-a-savoir-sur-la-vignette-pollution-crit-air-obligatoire-a-paris-840316;03/01/2017;Site de journal;Explication;Sans position;Lourd;Oui
-http://voiture.kidioui.fr/blog/droit-routier/la-vignette-critair-obligatoire-au-1er-juillet.html;;Forum;Explication;Sans position;faible;Oui
-http://www.lemessager.fr/faucigny/vignettes-crit-air-est-ce-praticable-dans-le-faucigny-ia933b935n178197;08/03/2017;Site de journal;Critique;opposé;faible;Oui
-http://www.caradisiac.com/vignette-crit-air-son-absence-sera-bientot-verbalisee-114235.htm;10/05/2017;Site de journal;Explication;Opposé;moyen;Oui
-http://www.ma-bmw.com/forum/viewtopic.php?t=28267;27/12/2016;Forum;Explication;Sans position;Moyen;Oui
-http://www.forum-autopassion.net/t15388-La-vignette-Crit-air-devient-obligatoire-en-ZCR-et-lors-des-pics-de-pollution.htm;11/05/2017;Forum;Explication;Opposé;Moyen;Oui
-https://forum.quechoisir.org/vignettes-crit-air-t83937.html;09/12/2016;Forum;Explication;Sans position;Moyen;Oui
-http://www.fourgon-passion.com/t8559p10-petition-contre-les-vignettes-crit-air;28/02/2017;Forum;Critique;opposé;Moyen;Oui
-http://h16free.com/2015/06/08/39635-les-pastilles-de-mamie-segolene;08/06/2015;Forum;Critique acerbe;opposé;Moyen;Oui
-https://fr.toluna.com/opinions/3199761/Pastille-Crit-Air;11/05/2017;Forum;Explication;Sans position;faible;Oui
-https://www.40millionsdautomobilistes.com/flash-actu/vignette-critair-une-operation-lucrative-pour-letat/;05/01/2017;Site associatif;Critique ;opposé;Lourd;Oui
+";18/01/2017;Site associatif;Explication;positif;Moyen;Oui;
+https://www.challenges.fr/automobile/actu-auto/crit-air-le-retour-de-l-ecopastille_14555;17/06/2016;Site de journal;Présentation;positif;Lourd;Non;présentation de Crit'air en se référant à l'ecopastille
+http://www.caradisiac.com/vignette-crit-air-oui-mais-sur-quels-criteres-112319.htm;27/01/2017;Forum;Critique ;opposé;Moyen;Non;critique sur les critères
+https://www.grazia.fr/news-et-societe/societe/5-choses-a-savoir-sur-la-vignette-pollution-crit-air-obligatoire-a-paris-840316;03/01/2017;Site de journal;Explication;Sans position;Lourd;Oui;
+http://voiture.kidioui.fr/blog/droit-routier/la-vignette-critair-obligatoire-au-1er-juillet.html;;Forum;Explication;Sans position;faible;Oui;
+http://www.lemessager.fr/faucigny/vignettes-crit-air-est-ce-praticable-dans-le-faucigny-ia933b935n178197;08/03/2017;Site de journal;Critique;opposé;faible;Oui;
+http://www.caradisiac.com/vignette-crit-air-son-absence-sera-bientot-verbalisee-114235.htm;10/05/2017;Site de journal;Explication;Opposé;moyen;Oui;critique de l'implémentation de Crit'air dans les territoires plus reculés
+http://www.ma-bmw.com/forum/viewtopic.php?t=28267;27/12/2016;Forum;Explication;Sans position;Moyen;Oui;
+http://www.forum-autopassion.net/t15388-La-vignette-Crit-air-devient-obligatoire-en-ZCR-et-lors-des-pics-de-pollution.htm;11/05/2017;Forum;Explication;Opposé;Moyen;Oui;
+https://forum.quechoisir.org/vignettes-crit-air-t83937.html;09/12/2016;Forum;Explication;Sans position;Moyen;Oui;
+http://www.fourgon-passion.com/t8559p10-petition-contre-les-vignettes-crit-air;28/02/2017;Forum;Critique;opposé;Moyen;Oui;
+http://h16free.com/2015/06/08/39635-les-pastilles-de-mamie-segolene;08/06/2015;Forum;Critique acerbe;opposé;Moyen;Oui;
+https://fr.toluna.com/opinions/3199761/Pastille-Crit-Air;11/05/2017;Forum;Explication;Sans position;faible;Oui;
+https://www.40millionsdautomobilistes.com/flash-actu/vignette-critair-une-operation-lucrative-pour-letat/;05/01/2017;Site associatif;Critique ;opposé;Lourd;Oui;polémique autour de l'utilité de Crit'air: c'est juste une manière de gagner de l'argent
+http://lesblogs.motomag.com/jlaumaillerphotos/2017/01/18/lhomme-crea-la-pollution-son-gouvernement-une-taxe/;18/01/2017;Blog;Critique acerbe;opposé;Moyen;Non;polémique autour de l'utilité de Crit'air: c'est juste une manière de gagner de l'argent
+http://www.forum-auto.com/automobile-pratique/motorisation-energie/sujet386301.htm;24/01/2017;Forum;Petition ;opposé;Moyen;Oui;Pétition visant à supprimer crit'air et proposition de solutions
+http://www.leblogauto.com/2015/12/critair-la-vignette-automobile-deja-remaniee-et-repoussee.html;;Forum;Explication + critique;opposé;Moyen;Oui;Critique des critères 
+http://www.forum-auto.com/marques/toyota/sujet10152.htm;12/07/2016;Forum;Critique ;opposé;Moyen;Oui;Critique des critères et de la classification des vehicues hybrides
+https://lamecaniquepourlesfilles.com/quel-certificat-qualite-de-l-air-pour-ma-voiture/;20/12/2016;Forum;Explication;Sans position;Lourd;Oui;Explication et information à propos de la vignettes
+http://www.vehiculesmilitaires.com/viewtopic.php?f=159&t=3869;20/05/2017;Forum;Explication;Sans position;Faible;Oui;Interrogation à propos des véhicules de collections pa rapport à la vignette
