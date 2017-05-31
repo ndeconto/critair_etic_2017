@@ -30,6 +30,10 @@
 	
 	
 	<link rel="stylesheet" type="text/css" href="css/monstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-pagination.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -45,57 +49,41 @@
   
   
  <body>
- 
-	<nav class="navbar navbar-default">
-	<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Accueil</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	
-	<!-- on peut virer le "navbar-right" dans la ligne suivante pour aligner � gauche -->
-      <ul class="nav navbar-nav navbar-right">
-	  
-	  
-	  <li class="dropdown">
-          <a href="arbredebats.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="arbredebats.html">Arbre des débats</a></li>
-			<li role="separator" class="divider"></li> <!-- pour faire la petite ligne de s�paration -->
-            <li><a href="acteurs.html">Carte des acteurs</a></li>
-			<li role="separator" class="divider"></li>
-            <li><a href="frise.html">Frise chronologique</a></li>
-          </ul>
-       </li>
-	   
-	   <!-- pour mettre un bouton en actif -->
-       <!-- <li class="active"><a href="#">Approfondi <span class="sr-only">(current)</span></a></li> -->
-	   
-	   <li><a href="approfondi.html">Approfondi</a></li>
-       <li><a href="apropos.html">A propos</a></li>
-
-	   
-      </ul>
-	  
-	  
-    </div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-	</nav>
 	
-	<header>
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo">Les critères de Crit'air</a>
+					</header>
+
+	<section id="banner">
+		<div class="inner">
+			<header>
+				<h1>Les critères de Crit'air</h1>
+			</header>
+			<ul class="actions">
+				<li><a href="acteurs.html" id="but1" class="button special big">Carte des acteurs</a></li>
+				<li><a href="frise.html" id="but2" class="button special big">Frise chronologique</a></li>
+				<li><a href="arbredebats.html" id="but3" class="button special big">Arbre des débats</a></li>
+				<br></br>
+				<li><a href="approfondi.html" id="but4" class="button special big">Approfondi</a></li>
+				<li><a href="apropos.html" id="but5" class="button special big">A propos</a></li>
+			</ul>
+		</div>
+		
+		<!-- <a href="#articles" class="more scrolly">Nous découvrir</a> -->
+	</section>
+	
+	
+	<!-- <header>
        <div class="hima">
            <h1><span>Les critères de Crit'air</span></h2>
         </div>
     </header> 
+	-->
 
 	
 	<!--
@@ -119,7 +107,7 @@
 	
 	
 
-<section>
+<section id="articles">
 	<div class="container">
 
 		<br><br>
@@ -174,6 +162,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="/js/jquery.scrolly.min.js"></script>
 	
 	
 	
