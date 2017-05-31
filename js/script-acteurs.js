@@ -3,13 +3,13 @@
        [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1],
        [0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
        [0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0],
-       [0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
        [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0],
        [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3],
        [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0],
-       [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3],
-       [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1],
+       [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1],
+       [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1],
        [0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1],
        [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
        [0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0]
@@ -28,21 +28,23 @@ $(".legend").find("li").each(function() {
   lgspan.css("background-color", colorCats[lgspan.attr("class")]);
 });
 
-var content = [[0], [1], [3], [4], [5], [6], [17], [7], [8], [9], [10], [13], [11], [12], [14], [16]];
+//var content = [[0], [1], [3], [4], [5], [6], [17], [7], [8], [9], [10], [13], [11], [12], [14], [16]];
+var content = [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13]];
 
-var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas de non respect du certificat et des lois"],
-                ["Marie de Paris", "Ils ont mis en place le certificat. Ils ont à coeur de mener une politique écolo, et avoir une ville sans diesel d'ici 2020, et sans voiture d'ici 2022."],
-				["Ministère de l'environnement", "Il a soutenu la mise en place du certificat"],
-				["Conseil d'Etat", "Protège les droits des citoyens en s'assurant du respect de la constituton"],
+
+var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas de non respect du certificat et des lois. Est en charge de faire respecter la loi vis à vis de la loi crit'air, et effectue les contrôles demandés par la mairie."],
+                ["Marie de Paris", "Met en place le certificat qui concernent les automobilistes et les habitants. Ils ont à coeur de mener une politique écolo, et avoir une ville sans diesel d'ici 2020, et sans voiture d'ici 2022. Demande à la prefecture de faire des contrôles. Donne des informations aux médias sur la vignette. Se base sur les données de Air Parif et sur les seuils de l'OMS pour décider de mise en place de mesures préventives. "],
+				["Ministère de l'environnement", "A soutenu la mise en place du certificat. Propose à l'assemblée nationale un projet de loi, puis une fois celui-ci accepté, émet le décret."],
+				["Conseil d'Etat", "Protège les droits des citoyens en s'assurant du respect de la constituton."],
 				["Assemblée nationale", "lrgh"],
-				["Imprimerie Nationale", "Imprime les certificats Crit'Air. Le coût de fabrication est exactement couvert par les 4,18€ que paie chaque automobiliste par vignette."],
-				["Union Européenne", "Etablit des normes restrictives de rejet de pollutants pour les véhicules (normes Euro) que les pays doivent respecter"],
-				["Constructeus automobiles", "Respecte les normes Euro en rendant leurs véhicules moins pollutants (pots catalytiques et filtres antiparticules)"],
-				["Habitants", "Présents dans la ville, ils subissent directement les conséquences de la pollution."],
-				["Automobilistes", "Ils sont les premiers concernés et doivent se soumettre à ce nouveau système pour circuler dans certaines zones."],
-				["Associations d'automobilistes", "Souvent opposées à ce système, elles font entendre leur voix pour dénoncer le manque de fondement et les conséquences négatives injuste."],
-				["OMS", "Fixe les normes pour la pollution: seuils pour chaque polluant"],
-				["Air Parif", "Mesure quotidiennement la pollution en région parisienne"],
+				["Imprimerie Nationale", "Imprime pour le ministère de l'environnement les certificats Crit'Air. Le coût de fabrication est exactement couvert par les 4,18€ que paie chaque automobiliste par vignette."],
+				["Union Européenne", "L'union européenne fixe les normes euros que doivent respecter les constructeurs automobiles. Ces normes sont fixées avec l'OMS."],
+				["Constructeurs automobiles", "Rendent leurs véhicules moins pollutants (pots catalytiques et filtres antiparticules). Les nouveaux véhicules sont construits en respectant les normes européennes."],
+				["Habitants", "Présents dans la ville, ils subissent directement les conséquences de la pollution. Ils doivent respecter les règles imposées par la mairie et la préfecture. Ils peuvent se regrouper en association pour manisfester leur avis."],
+				["Automobilistes", "Ils sont les premiers concernés et doivent se soumettre à ce nouveau système pour circuler dans certaines zones. Ils achètent donc la vignette crit'air. Certains manifestent leur mécontentement à travers les médias et les associations."],
+				["Associations", "Elles expriment le point de vue des habitants et des automobilistes dans les médias."],
+				["Organisation Mondiale de la Santé", "Fixe les normes pour la pollution ; il y a des seuils pour chaque polluant. Ces normes seront ensuite reprises les mairies, les médias et l'Union Européenne pour juger du niveau de pollution."],
+				["Air Parif", "Mesure quotidiennement la pollution en région parisienne. Ses normes sont en accord avec celles de l'OMS. Ils préviennent la mairie et les médias lors des pics de pollution."],
 				["Media", "Les médias grand public relaient des informations sur le système, souvent en reprenant le discours de l'Etat, donc légitiment sa mise en place. Les médias spécialisés ont plus tendance à dénoncer subjectif et absurde selon eux."]
 				]
 var chord = d3.layout.chord()
@@ -50,6 +52,8 @@ var chord = d3.layout.chord()
     .sortSubgroups(d3.descending)
     .matrix(matrix);
 
+	
+	/* on peut jouer sur le -20 pour faire varier la taille du graphique à l'intérieur du cadre */
 var dim = Math.min($(window).width() / 2, $(window).height()) - 10;
 var margX = ($(window).width() / 2 > $(window).height()) ? ($(window).width()/2 - $(window).height()) / 2 : 0;
 var margY = ($(window).width() / 2 < $(window).height()) ? ($(window).height() - $(window).width()/2) / 2 : 0;
@@ -63,8 +67,10 @@ var fill = d3.scale.ordinal()
     .domain(d3.range(4))
     .range(colors);
 
+	
+	/* on peut jouer sur la taille du cadre ici */
 var svg = d3.select("body").append("svg")
-    .attr("width", $(window).width() / 2)
+    .attr("width", $(window).width() / 2 + 100)
     .attr("height", $(window).height() - 10)
   .append("g")
     .attr("transform", "translate(" + (dim / 2 + margX) + "," + (dim / 2 + margY) + ")");

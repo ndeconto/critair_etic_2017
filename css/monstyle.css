@@ -2,7 +2,8 @@
 
 h1 {
 	text-align: center;
-	color: blue;
+	vertical-align: middle;
+	color: black;
 	
 	/* margin: ... pour mettre des marges */
 }
@@ -24,6 +25,18 @@ section h1.section-heading {
 }*/
 
 
+.header {
+	line-height: 200px;
+	}
+
+.hima {
+	height: 300px;
+	width : 100%;
+    background-image: url(../img/imgcritair2.png);
+   background-size: cover;
+   
+
+}
 
 
 
@@ -74,20 +87,21 @@ color: #555;
     margin-bottom: 0px;
 	margin : 0px 0;
 	/* augmenter le padding permet de ézoomer" l'image */
-	padding: 4px 0;
+	padding: 0px 0;
  }
 
 /* signification : applicable à tout ce qui est dans un intro-header */
 .intro-header h1 {
 
-	font-size: 10;
+	font-size: 100;
 	color: black;
+	height: 10px;
 }
 
 .site-heading h1{
 	
 	color:black;
-	font-size:1000
+	font-size:100
 }
 
 
