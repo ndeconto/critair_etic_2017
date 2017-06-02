@@ -15,7 +15,7 @@
        [0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0]
 	];
 
-var labels = ["Préfecture de police", "Marie de Paris", "Ministère de l'environnement", "Conseil d'état", "Assemblée nationale", "Imprimerie nationale", "U. E.", "Constructeurs auto", "habitants", "Automobilistes", "Associations", "OMS", "Air Parif", "Média"];
+var labels = ["Préfecture de police", "Mairie de Paris", "Ministère de l'environnement", "Conseil d'état", "Assemblée nationale", "Imprimerie nationale", "U. E.", "Constructeurs auto", "Habitants", "Automobilistes", "Associations", "OMS", "Air Parif", "Média"];
 var cats = ["etat", "etat", "etat", "etat", "etat", "etat", "etat", "entreprises", "societe civile", "societe civile", "societe civile", "expert", "expert", "media"];
 var colorCats = {"etat" : "#58c649", "entreprises" : "#dfde26", "societe civile" : "#df7c26", "expert" : "#df262a", "media" : "#0974bf"};
 //colorCats = {"constructeur" : "#48926d", "equipementier" : "#429941", "etat" : "#28827d", "usager" : "#0269d6", "ong" : "#39914f", "media" : "#0974bf", "chercheur" : "#54b02a"};
@@ -36,7 +36,7 @@ var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas d
                 ["Marie de Paris", "Met en place le certificat qui concernent les automobilistes et les habitants. Ils ont à coeur de mener une politique écolo, et avoir une ville sans diesel d'ici 2020, et sans voiture d'ici 2022. Demande à la prefecture de faire des contrôles. Donne des informations aux médias sur la vignette. Se base sur les données de Air Parif et sur les seuils de l'OMS pour décider de mise en place de mesures préventives. "],
 				["Ministère de l'environnement", "A soutenu la mise en place du certificat. Propose à l'assemblée nationale un projet de loi, puis une fois celui-ci accepté, émet le décret."],
 				["Conseil d'Etat", "Protège les droits des citoyens en s'assurant du respect de la constituton."],
-				["Assemblée nationale", "lrgh"],
+				["Assemblée nationale", "A accepté le projet de loi que lui a proposé le ministère de l'environnement"],
 				["Imprimerie Nationale", "Imprime pour le ministère de l'environnement les certificats Crit'Air. Le coût de fabrication est exactement couvert par les 4,18€ que paie chaque automobiliste par vignette."],
 				["Union Européenne", "L'union européenne fixe les normes euros que doivent respecter les constructeurs automobiles. Ces normes sont fixées avec l'OMS."],
 				["Constructeurs automobiles", "Rendent leurs véhicules moins pollutants (pots catalytiques et filtres antiparticules). Les nouveaux véhicules sont construits en respectant les normes européennes."],
