@@ -23,8 +23,12 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	
-	<link rel="stylesheet" type="text/css" href="css/monstyle.css">
 	<link rel="stylesheet" type="text/css" href="css/style-timeline.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-pagination.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,50 +44,18 @@
   
  <body> 
   
-    <nav class="navbar navbar-default">
-	<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Accueil</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	
-	<!-- on peut virer le "navbar-right" dans la ligne suivante pour aligner ?auche -->
-      <ul class="nav navbar-nav navbar-right">
-	  
-	  
-	  <li class="dropdown">
-          <a href="arbredebats.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="arbredebats.html">Arbre des débats</a></li>
-			<li role="separator" class="divider"></li> <!-- pour faire la petite ligne de s?ration -->
-            <li><a href="acteurs.html">Carte des acteurs</a></li>
-			<li role="separator" class="divider"></li>
-            <li><a href="frise.html">Frise chronologique</a></li>
-          </ul>
-       </li>
-	   
-	   <!-- pour mettre un bouton en actif -->
-       <!-- <li class="active"><a href="#">Approfondi <span class="sr-only">(current)</span></a></li> -->
-	   
-	   <li><a href="approfondi.html">Approfondi</a></li>
-       <li><a href="apropos.html">A propos</a></li>
-
-	   
-      </ul>
-	  
-	  
-    </div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+    <header id="header">
+	<a href="index.html" class="logo">Accueil</a>
+	<nav>
+		<ul>
+			<li><a href="acteurs.html">Acteurs</a></li>
+			<li><a href="frise.html">Frise</a></li>
+			<li><a href="arbredebats.html">Débats</a></li>
+			<li><a href="approfondi.html">Approfondi</a></li>
+			<li><a href="apropos.html">A propos</a></li>
+		</ul>
 	</nav>
+	</header>
 
 	
 <section id="timeline">

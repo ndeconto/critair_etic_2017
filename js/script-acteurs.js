@@ -54,9 +54,9 @@ var chord = d3.layout.chord()
 
 	
 	/* on peut jouer sur le -20 pour faire varier la taille du graphique à l'intérieur du cadre */
-var dim = Math.min($(window).width() / 2, $(window).height()) - 10;
+var dim = Math.min($(window).width() / 2, $(window).height()) - 40;
 var margX = ($(window).width() / 2 > $(window).height()) ? ($(window).width()/2 - $(window).height()) / 2 : 0;
-var margY = ($(window).width() / 2 < $(window).height()) ? ($(window).height() - $(window).width()/2) / 2 : 0;
+var margY = 500 + ($(window).width() / 2 < $(window).height()) ? ($(window).height() - $(window).width()/2) / 2 : 0;
 
 var width = dim,
     height = dim,
@@ -70,10 +70,10 @@ var fill = d3.scale.ordinal()
 	
 	/* on peut jouer sur la taille du cadre ici */
 var svg = d3.select("body").append("svg")
-    .attr("width", $(window).width() / 2 + 100)
+    .attr("width", $(window).width() / 2 + 200)
     .attr("height", $(window).height() - 10)
   .append("g")
-    .attr("transform", "translate(" + (dim / 2 + margX) + "," + (dim / 2 + margY) + ")");
+    .attr("transform", "translate(" + (dim / 2 + margX + 20)  + "," + (dim / 2 + margY + 60) + ")");
 
 var bg = [{ "x_axis": 0, "y_axis": 0, "radius": innerRadius, "color" : "#EEEEEE" }];
 var circle = svg.selectAll("circle")
