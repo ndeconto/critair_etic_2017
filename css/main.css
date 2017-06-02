@@ -2266,24 +2266,49 @@ body.is-menu-visible #menu {
 	#but1 {
 		background-color: #00ff00;
 	}
+	
+	
     #banner .button.special {
       box-shadow: none;
-      background-color: #00ffff;
-      color: #690002 !important; }
+      /*color: #690002 !important; */ 
+	  }
+	  
+	 #banner .button.special.button1 {
+      background-color: #37713B;}
+	  
+	 #banner .button.special.button2 {
+      background-color: #ECBE37;}
+	  
+	 #banner .button.special.button3 {
+      background-color: #E88838;}
+	  
+	 #banner .button.special.button4 {
+      background-color: #492627;}
+	  
+	 #banner .button.special.button5 {
+      background-color: #4E4B48;}
+	  
+	  
+	  
+	  
       #banner input[type="submit"].special:hover,
       #banner input[type="reset"].special:hover,
       #banner input[type="button"].special:hover,
       #banner button.special:hover,
-      #banner .button.special:hover {
-        background-color: #000000; /*#cd9f1d;*/
+	  
+      #banner .button.special.big:hover {
+        background-color: #7A4882; /*#cd9f1d;*/
         color: #ffffff !important; }
+	
+		
+		
       #banner input[type="submit"].special:active,
       #banner input[type="reset"].special:active,
       #banner input[type="button"].special:active,
       #banner button.special:active,
       #banner .button.special:active {
         background-color: #a17d17;
-        color: #ffffff !important; }
+        color: #ffffff !important; } 
   #banner input, #banner select, #banner textarea {
     color: #ffffff; }
   #banner a:hover {
