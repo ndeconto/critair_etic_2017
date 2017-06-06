@@ -36,7 +36,7 @@ var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas d
                 ["Marie de Paris", "Met en place le certificat qui concernent les automobilistes et les habitants. Ils ont à coeur de mener une politique écolo, et avoir une ville sans diesel d'ici 2020, et sans voiture d'ici 2022. Demande à la prefecture de faire des contrôles. Donne des informations aux médias sur la vignette. Se base sur les données de Air Parif et sur les seuils de l'OMS pour décider de mise en place de mesures préventives. "],
 				["Ministère de l'environnement", "A soutenu la mise en place du certificat. Propose à l'assemblée nationale un projet de loi, puis une fois celui-ci accepté, émet le décret."],
 				["Conseil d'Etat", "Protège les droits des citoyens en s'assurant du respect de la constituton."],
-				["Assemblée nationale", "A accepté le projet de loi que lui a proposé le ministère de l'environnement"],
+				["Assemblée nationale", "A accepté le projet de loi que lui a proposé le ministère de l'environnement."],
 				["Imprimerie Nationale", "Imprime pour le ministère de l'environnement les certificats Crit'Air. Le coût de fabrication est exactement couvert par les 4,18€ que paie chaque automobiliste par vignette."],
 				["Union Européenne", "L'union européenne fixe les normes euros que doivent respecter les constructeurs automobiles. Ces normes sont fixées avec l'OMS."],
 				["Constructeurs automobiles", "Rendent leurs véhicules moins pollutants (pots catalytiques et filtres antiparticules). Les nouveaux véhicules sont construits en respectant les normes européennes."],
@@ -45,7 +45,7 @@ var contentText = [["Préfecture de police", "Pénalise les conducteurs en cas d
 				["Associations", "Elles expriment le point de vue des habitants et des automobilistes dans les médias."],
 				["Organisation Mondiale de la Santé", "Fixe les normes pour la pollution ; il y a des seuils pour chaque polluant. Ces normes seront ensuite reprises les mairies, les médias et l'Union Européenne pour juger du niveau de pollution."],
 				["Air Parif", "Mesure quotidiennement la pollution en région parisienne. Ses normes sont en accord avec celles de l'OMS. Ils préviennent la mairie et les médias lors des pics de pollution."],
-				["Media", "Les médias grand public relaient des informations sur le système, souvent en reprenant le discours de l'Etat, donc légitiment sa mise en place. Les médias spécialisés ont plus tendance à dénoncer subjectif et absurde selon eux."]
+				["Media", "Les médias grand public relaient des informations sur le système, souvent en reprenant le discours de l'Etat, donc légitiment sa mise en place. Les médias spécialisés ont plus tendance à dénoncer un système subjectif et absurde selon eux."]
 				]
 var chord = d3.layout.chord()
     .padding(.05)
@@ -54,7 +54,7 @@ var chord = d3.layout.chord()
 
 	
 	/* on peut jouer sur le -20 pour faire varier la taille du graphique à l'intérieur du cadre */
-var dim = Math.min($(window).width() / 2, $(window).height()) - 40;
+var dim = Math.min($(window).width() / 2, $(window).height()) - 100;
 var margX = ($(window).width() / 2 > $(window).height()) ? ($(window).width()/2 - $(window).height()) / 2 : 0;
 var margY = 500 + ($(window).width() / 2 < $(window).height()) ? ($(window).height() - $(window).width()/2) / 2 : 0;
 
@@ -71,9 +71,9 @@ var fill = d3.scale.ordinal()
 	/* on peut jouer sur la taille du cadre ici */
 var svg = d3.select("body").append("svg")
     .attr("width", $(window).width() / 2 + 200)
-    .attr("height", $(window).height() - 10)
+    .attr("height", $(window).height() - 0)
   .append("g")
-    .attr("transform", "translate(" + (dim / 2 + margX + 20)  + "," + (dim / 2 + margY + 60) + ")");
+    .attr("transform", "translate(" + (dim / 2 + margX + 50)  + "," + (dim / 2 + margY + 60) + ")");
 
 var bg = [{ "x_axis": 0, "y_axis": 0, "radius": innerRadius, "color" : "#EEEEEE" }];
 var circle = svg.selectAll("circle")
