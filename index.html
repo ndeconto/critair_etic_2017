@@ -44,7 +44,21 @@
     <![endif]-->
 	
 	
+	<script type="text/javascript">
+	function scroll() {
+		var oA = document.getElementById('ScrollButton');
+		alert('coucou');
+		oA.onclick = function() {
+			alert('coucou');
+			$('a[href*=#]').on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			};
+		}
+	}
 	
+	window.onload = scroll;
+	</script>
 	
 	
   </head>
@@ -70,10 +84,11 @@
 							<li><a href="approfondi.html">Approfondi</a></li>
 							<li><a href="apropos.html">A propos</a></li>
 							</ul>
+							
 						</nav>
 						
 					</header>
-						
+					
 						
 						
 					
@@ -91,6 +106,10 @@
 				<li><a href="approfondi.html" class="button special big button4">Approfondi</a></li>
 				<li><a href="apropos.html" class="button special big button5">A propos</a></li>
 			</ul>
+		</div>
+		
+		<div class="demoz">
+			<a id="ScrollButton" href="#articles"><span class="glyphicon glyphicon-menu-down" aria-hidden="true" size="100"></span></a>
 		</div>
 		
 		<!-- <a href="#articles" class="more scrolly">Nous découvrir</a> -->
