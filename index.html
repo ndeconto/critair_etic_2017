@@ -44,21 +44,14 @@
     <![endif]-->
 	
 	
-	<script type="text/javascript">
-	function scroll() {
-		var oA = document.getElementById('ScrollButton');
-		alert('coucou');
-		oA.onclick = function() {
-			alert('coucou');
-			$('a[href*=#]').on('click', function(e) {
-			e.preventDefault();
-			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-			};
-		}
-	}
-	
-	window.onload = scroll;
-	</script>
+	<!--<script language="javascript">
+	$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+});
+	</script> -->
 	
 	
   </head>
@@ -109,7 +102,7 @@
 		</div>
 		
 		<div class="demoz">
-			<a id="ScrollButton" href="#articles"><span class="glyphicon glyphicon-menu-down" aria-hidden="true" size="100"></span></a>
+			<a id="ScrollButton"><span class="glyphicon glyphicon-menu-down" aria-hidden="true" size="100"></span></a>
 		</div>
 		
 		<!-- <a href="#articles" class="more scrolly">Nous découvrir</a> -->
@@ -152,14 +145,18 @@
 			<h2> Crit'air, qu'est-ce que c'est ? </h2>
 			
 			<p> Les vignettes crit'air sont apparues en France à partir de 2015. Elles classent les véhicules dans 6 catégories en fonction de leurs émissions polluantes, à partir des normes européennes d'émission.
-Élaboré par le ministère de l'Environnement en collaboration avec le ministère de l'Intérieur, ce système est l'un des moyens de diminution de l'impact environnemental du transport routier. Il s'inscrit dans un dispositif français permettant d'identifier la contribution présumée des véhicules automobiles à la pollution de l'air </p>
+Élaboré par le ministère de l'Environnement en collaboration avec le ministère de l'Intérieur, ce système est l'un des moyens mis en place pour diminuer l'impact environnemental du transport routier. Il s'inscrit dans un dispositif français permettant d'identifier la contribution présumée des véhicules automobiles à la pollution de l'air.</p>
 			
 			
+			<h2>Crit'air, comment ça marche ?</h2>
+			<p>Chaque propriétaire d'un véhicule doit acheter à l'Etat une vignette crit'air (qui coûte 4,18€) et la coller sur son pare-prise. La vignette reçue par l'automobibliste dépend de ce que rejette le véhicule. Les automobilistes ayant les voitures les plus propres reçoivent une vignette de catégorie 1 (vignette verte), tandis que ceux possédant un véhicule parmi les plus polluants reçoivent une vignette de catégorie 6 (vignette noire).<br/>
+				Tant qu'il n'y a pas de pic de pollution en ville, cette vignette ne change strictement rien à la circulation des véhicules. En revanche, lors des pics de pollution, et selon la gravité de ces pics, seules les catégories de véhicules les plus propres seront autorisées à rouler en centre-ville. Par exemple, lors d'un pic de pollution, seules les catégories 1 à 4 peuvent être autorisées à rouler (et donc les catégories 5 et 6 sont interdites). Plus le pic de pollution est grave, moins il y a de catégories de vignette autorisées à rouler. Ainsi, lors d'un pic de pollution extrêmement important, seules les vignettes vertes (catégorie 1) pourraient être autorisées à rouler.
+			</p>	
 			
 			<h2> Pourquoi Crit'air ? </h2>
 			<p> La capitale est régulièrement touchée par des épisodes de pollution dépassant les seuils journaliers recommandés par l’OMS. Le trafic automobile est responsable d’une grande partie de cette pollution. 
 Ainsi, Crit’air pourrait contribuer à améliorer la qualité de l’air lors de ces pics de pollution.
-Le Certificat qualité de l’air « donne droit à des avantages pour les véhicules les moins polluants »
+Le Certificat qualité de l’air « donne droit à des avantages pour les véhicules les moins polluants.»
 </p>
 	</div>
 	
@@ -206,6 +203,19 @@ Le Certificat qualité de l’air « donne droit à des avantages pour les véhi
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="/js/jquery.scrolly.min.js"></script>
+	<script src="js/jquery-3.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+    $("#ScrollButton").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#articles").offset().top
+        }, 1000);
+    });
+
+});
+	</script>
 	
 	
 	
